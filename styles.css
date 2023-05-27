@@ -15,7 +15,7 @@ background-size: cover;
 }
   
   nav {
-    background-color: #ffff;
+    background: rgba(red, green, blue, alpha);
     color: #333;
     display: flex;
     justify-content: space-evenly;
