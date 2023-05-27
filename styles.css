@@ -44,4 +44,29 @@ background-size: cover;
     text-decoration: underline;
   }
  
+  .logo{
+    margin-top: 0%;
+    padding: 0ch;
+    font-family: 'poppins';
+    text-transform:capitalize;
+     font-size: 34px;
+    font-weight:lighter;
+    cursor:pointer;
+    background: linear-gradient(90deg,red, turquoise,pink,yellow,black,purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:300% 300%;
+    animation: animate 8s ease-in-out infinite;
+  }
+  @keyframes animate{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50% ; 
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
   
