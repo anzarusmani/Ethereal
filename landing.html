@@ -8,14 +8,22 @@
   
     .card {
       position: relative;
-      width: 300px;
-      height: 400px;
-      overflow: hidden;
-      cursor: pointer;
-      margin: 15px;
-      border-radius: 20px;
+    top: 83px;
+    width: 449px;
+    height: 600px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 37px;
+    border-radius: 41px;
+
     }
+    .img22{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     
+  }
     .card img {
       width: 100%;
       height: 100%;
@@ -54,14 +62,18 @@
   </style>
 </head>
 <body>
+  <div>
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
+      
     </ul>
   </nav>
+</div>
+<div class="img22">
   <div class="card">
     <img src="assets\spain.jpg" alt="Image 1">
     <div class="overlay">
@@ -69,16 +81,17 @@
     </div>
   </div>
   <div class="card">
-    <img src="C:\Users\asus\Downloads\Martires del cambio.jpg" alt="Image 2">
+    <img src="assets\Martires del cambio.jpg" alt="Image 2">
     <div class="overlay">
       <p class="overlay-text">Venice</p>
     </div>
   </div>
   <div class="card">
-    <img src="C:\Users\asus\Downloads\Porto.jpg" alt="Image 3">
+    <img src="assets\Porto.jpg" alt="Image 3">
     <div class="overlay">
       <p class="overlay-text">Portugal</p>
     </div>
   </div>
+</div>
 </body>
 </html>

@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    
   
     justify-content: center;
     align-items: center;
@@ -13,7 +12,7 @@ backdrop-filter: blur(5px);
 background-repeat: no-repeat;
 background-size: cover;
 
-  }
+}
   
   nav {
     background-color: #ffff;
@@ -44,4 +43,5 @@ background-size: cover;
   nav ul li a:hover {
     text-decoration: underline;
   }
+ 
   
