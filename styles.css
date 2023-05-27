@@ -46,6 +46,7 @@ background-size: cover;
  
   .logo{
     margin-top: 0%;
+    width: 900px;
     padding: 0ch;
     font-family: 'poppins';
     text-transform:capitalize;
