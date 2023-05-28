@@ -1,126 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ethereal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="pre.css">
+    <style>
+        .prel{
+            position:absolute;
+            min-height: 0px;
+        }
+    </style>
+</head>
 
-
-  <style>
-  
-    .card {
-   
-      position: relative;
-    top: 40px;
-    width: 300px;
-    height: 500px;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 20px;
-    border-radius: 41px;
-
-    }
-
-    
-
-    .img22{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-  }
-
-    .card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 0.3s ease;
-    }
-    
-    .card:hover img {
-      transform: scale(1.1);
-    }
-
-    
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    
-    .card:hover .overlay {
-      opacity: 1;
-    }
-   
-    .overlay-text {
-      color: white;
-      font-family:'Lobster', cursive;
-      font-size: 34px;
-      font-weight: bold;
-    }
-  </style>
-  
-<body>
-<div>
-  
-  
-<video class="video-bg" autoplay muted loop plays-inline>
-  <source src="assets/landing-adv.mp4" type="video/mp4">
-</video>
-
-
-  <nav>
-    
-    <div class="logo"><a href="index.html">Ethereal</a>
-             
+<body onload='load()'>
+    <div class="prel">
+    <IMG SRC="assets/reduced-splsh.gif">
     </div>
-    
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Log-in</a></li>
-      <li><a href="cart.html"><i class="fas fa-shopping-cart cart-icon"></i></a></li>
-    </ul>
-    
-  </nav>
-  
-</div>
-
-
-
-
-
-<div class="img22">
-  <div class="card" style="cursor: pointer;" onclick="window.location.href='spain_map.html'">
-    <img src="assets\spain.jpg" alt="Image 1">
-    <div class="overlay">
-      <p class="overlay-text">Spain</p>
-    </div>
-  </div>
-  <div class="card" style="cursor: pointer;" onclick="window.location.href='venice_map.html'">
-    <img src="assets\Martires del cambio.jpg" alt="Image 2">
-    <div class="overlay">
-      <p class="overlay-text">Venice</p>
-    </div>
-  </div>
-  <div class="card" style="cursor: pointer;" onclick="window.location.href='portugal_map.html'">
-    <img src="assets\Porto.jpg" alt="Image 3">
-    <div class="overlay">
-      <p class="overlay-text">Portugal</p>
-    </div>
-  </div>
-</div>
 </body>
-</html>
+
+
+<script>
+    function load() {
+       setTimeout(myURL, 5000);
+      }
+  
+    function myURL() {
+       window.open('index.html', name = self);
+    }
+  </script>
