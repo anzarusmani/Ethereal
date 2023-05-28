@@ -164,10 +164,6 @@
     border-block-color: #eeebeb08;
   
 }
-.placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: red;
-    opacity: 1;
-}
 
   h1 {
     font-size: 32px;
