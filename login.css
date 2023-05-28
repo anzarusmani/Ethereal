@@ -139,9 +139,13 @@
 
 .text
 {
-  width:100%;
-  font-size: 15px;
-  background-color:#eeebeb08;
+  width: 115%;
+  font-size: 17px;
+  background-color: #eeebeb08;
+  position: relative;
+  left: -12px;
+  border-radius: 96px;
+  border-block-color: #eeebeb08;
   
 }
 .placeholder{
