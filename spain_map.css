@@ -18,12 +18,12 @@
   bottom: 100px;
   width: 200px;
   padding: 10px;
-  /* background-image: url("assets/boat-ispain.jpg"); */
+  background-image: url("assets/boat-ispain.jpg");
+  backdrop-filter: op(5px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f9f9f9;
-  /* backdrop-filter: blur(5px); */
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
