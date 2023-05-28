@@ -74,7 +74,16 @@ body {
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+  .tt{    
+    
+    width: 190px;
+    position: relative;
+    font-size: 23px;
+    left: 54px;
+    color: #0c0c0c;
+    background-color: #3bffed57;
+
+  }
   .cart-item h3 {
     margin: 0;
     font-size: 18px;
