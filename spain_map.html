@@ -4,9 +4,39 @@
   <script src="spain_main.js"></script>
   <title>Ethereal</title>
   <link rel="stylesheet" type="text/css" href="spain_map.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
   <style>
 
+.back-arrow {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+
+
+.flash-message {
+      position: fixed;
+      bottom: 110px;
+      left: 20px;
+      height: 100px;
+      width:400px;
+      background-color: #f8f8f8;
+      padding: 25px 10px;
+      background-image: url('assets/boat-ispain.png');
+      border-radius: 70px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: flashAnimation 1s ease-in-out;
+    }
+
+    @keyframes flashAnimation {
+      0% { opacity: 0; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.1); }
+      100% { opacity: 0; transform: scale(1); }
+    }
    
     body {
         padding-top: 495px;
@@ -27,10 +57,18 @@
       /* color: #000; */
       cursor: pointer;
     }
+    .message{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 600;
+    }
 
   </style>
 </head>
 <body>
+  <div class="back-arrow" onclick="window.location.href='index.html'">
+    <i class="fas fa-arrow-left"></i>
+  </div>
+  
   
   <div class="boat" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)"></div>
   <div class="info-card1" id="info-card1">
@@ -77,11 +115,33 @@
   </div>
 
 
-  <div class="cart-icon"  ondragover="allowDrop(event)" ondrop="drop(event)">
+  <div class="cart-icon"  ondragover="allowDrop(event)" ondrop="drop(event)" onclick="window.location.href='cart.html'">
     <!-- <i class="fas fa-shopping-cart"></i> -->
     <img src="assets/shopping-cart-icon.png" alt="Cart Icon" width="60" height="60">
     <span id="cartCount">0</span>
   </div>
 
+  <div class="flash-message" id="flashMessage">
+    <div class="message" id="message">
+    <ul>
+      <p>Welcome! Hover over the buttons to discover information about activities and accommodations. You can also drag the buttons to the cart to add them. Enjoy your experience!</p>
+    </ul>
+  </div>
+</div>
+<script>
+  
+  const flashMessage = document.getElementById('flashMessage');
+
+ 
+  const removeFlashMessage = () => {
+    flashMessage.parentNode.removeChild(flashMessage);
+  };
+
+
+  flashMessage.addEventListener('click', removeFlashMessage);
+
+  const flashMessageDuration = 10000; 
+  setTimeout(removeFlashMessage, flashMessageDuration);
+</script>
 </body>
 </html>

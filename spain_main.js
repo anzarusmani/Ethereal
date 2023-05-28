@@ -1,15 +1,3 @@
-function showInfo(button) {
-  var infoCard = button.nextElementSibling;
-  infoCard.style.display = 'block';
-}
-
-function hideInfo(button) {
-  var infoCard = button.nextElementSibling;
-  infoCard.style.display = 'none';
-}
-
-
-
 
 
 function dragStart(event) {
@@ -22,9 +10,28 @@ function allowDrop(event) {
 
 function drop(event) {
   event.preventDefault();
-  const draggedItemClass = event.dataTransfer.getData('text/plain');
-  const draggedItem = document.querySelector(`.${draggedItemClass}`);
-  event.target.appendChild(draggedItem);
-  const cartCount = document.querySelector('#cartCount');
-  cartCount.textContent = event.target.childElementCount;
+  var data = event.dataTransfer.getData("text");
+  var cartCount = document.getElementById("cartCount");
+  var count = parseInt(cartCount.innerText) + 1;
+  cartCount.innerText = count;
+
+  var draggedButton = document.querySelector("." + data); // Get the dragged button
+  var correspondingInfoCard = draggedButton.nextElementSibling; // Get the corresponding info card
+
+  event.target.appendChild(draggedButton);
+  correspondingInfoCard.style.display = "none"; 
 }
+
+
+
+function showInfo(button) {
+  var infoCard = button.nextElementSibling;
+  infoCard.style.display = 'block';
+}
+
+function hideInfo(button) {
+  var infoCard = button.nextElementSibling;
+  infoCard.style.display = 'none';
+}
+
+
