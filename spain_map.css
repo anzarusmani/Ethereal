@@ -18,7 +18,12 @@
   bottom: 100px;
   width: 200px;
   padding: 10px;
+  /* background-image: url("assets/boat-ispain.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #f9f9f9;
+  /* backdrop-filter: blur(5px); */
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -29,7 +34,7 @@
 }
 
 .boat:hover {
-  background-color: #2bb0f3;
+  background-color: #8acdee;
 }
 
 .boat:hover + .info-card1 {
@@ -75,7 +80,7 @@
 
 
 .trek:hover {
-  background-color: #f3d52b;
+  background-color: #8acdee;
 }
 
 .trek:hover + .info-card2 {
@@ -124,7 +129,7 @@
 
 
 .gliding:hover {
-  background-color: #f3d52b;
+  background-color: #8acdee;
 }
 .gliding:hover + .info-card5 {
   display: block;
@@ -171,7 +176,7 @@
 }
 
 .hotel1:hover {
-  background-color: #f3d52b;
+  background-color: #8acdee;
 }
 
 .hotel1:hover + .info-card3 {
@@ -215,7 +220,7 @@
 
 
 .hotel2:hover {
-  background-color: #f3d52b;
+  background-color: #8acdee;
 }
 
 .hotel2:hover + .info-card4 {
