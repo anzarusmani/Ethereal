@@ -38,7 +38,7 @@ background-size: cover;
   
   nav ul li a {
     color: #333;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     text-decoration: none;
     
@@ -62,7 +62,7 @@ background-size: cover;
     padding: 0ch;
     font-family: 'poppins';
     text-transform:capitalize;
-     font-size: 34px;
+     font-size: 50px;
     font-weight:lighter;
     cursor:pointer;
     background: linear-gradient(90deg,red, turquoise,pink,yellow,black,purple);
