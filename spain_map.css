@@ -227,3 +227,9 @@
 .hotel2:hover + .info-card4 {
   display: block;
 } 
+
+
+.cart-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+}

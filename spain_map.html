@@ -4,10 +4,9 @@
   <script src="spain_main.js"></script>
   <title>Ethereal</title>
   <link rel="stylesheet" type="text/css" href="spain_map.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
   <style>
 
-
-    
    
     body {
         padding-top: 495px;
@@ -19,9 +18,20 @@
       justify-content:center ;
     }
     
+    
+    .cart-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 24px;
+      /* color: #000; */
+      cursor: pointer;
+    }
+
   </style>
 </head>
 <body>
+  
   
   <div class="boat" onmouseover="showInfo(this)" onmouseout="hideInfo(this)"></div>
   <div class="info-card1" id="info-card1">
@@ -66,6 +76,11 @@
     <h3>Trekking in Spain</h3>
   <p>Embark on an unforgettable adventure through the breathtaking landscapes of Spain. Our guided trekking tours offer the perfect opportunity to explore the diverse natural beauty of this enchanting country.</p>
   <p>From the rugged mountains of the Pyrenees to the stunning coastal trails of Costa Brava, Spain offers a wide range of trekking options for all skill levels. Immerse yourself in the serenity of nature, witness stunning vistas, and discover hidden gems along the way.</p>  <p>Price: Starting from $150 per person</p>
+  </div>
+
+  <div class="cart-icon">
+    <!-- <i class="fas fa-shopping-cart"></i> -->
+    <img src="assets/shopping-cart-icon.png" alt="Cart Icon" width="60" height="60">
   </div>
 
 </body>
