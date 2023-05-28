@@ -1,0 +1,172 @@
+.football-portugal  {
+    position: relative;
+    left: 525px;
+    top: -375px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .info-card1 {
+    position: absolute;
+    display: none;
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-image: url("assets/boat-ispain.jpg");
+    backdrop-filter: op(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card1 h4 {
+    margin-top: 0;
+  }
+  
+  .football-portugal:hover {
+    background-color: greenyellow;
+  }
+  
+  .football-portugal:hover + .info-card1 {
+    display: block;
+  } 
+  
+
+
+  .mountain {
+    position: relative;
+    left: 775px;
+    top: -600px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .info-card3 {
+    position: absolute;
+    background-image: url("assets/trekking-spain.png");
+    display: none;
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card3 h4 {
+    margin-top: 0;
+  }
+  .mountain:hover {
+    background-color: greenyellow;
+  }
+  
+  .mountain:hover + .info-card2 {
+    display: block;
+  } 
+
+
+
+  .hotel1 {
+    position: relative;
+    left: 900px;
+    top: -440px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .info-card4 {
+    position: absolute;
+    display: none;
+    background-image: url("assets/boat-ispain.png");
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card4 h4 {
+    margin-top: 0;
+  }
+
+  .hotel1:hover {
+    background-color: greenyellow;
+  }
+  
+  .hotel1:hover + .info-card4 {
+    display: block;
+  } 
+  
+  .info-card5 {
+    position: absolute;
+    display: none;
+    background-image: url("assets/gliding-ispain.png");
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+  .island-survive {
+    position: relative;
+    left: 1100px;
+    top: -420px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .info-card5 h4 {
+    margin-top: 0;
+  }
+  
+  
+  
+  .island-survive:hover {
+    background-color: greenyellow;
+  }
+  .island-survive:hover + .info-card5 {
+    display: block;
+  } 
+  
+  
+  
+  
