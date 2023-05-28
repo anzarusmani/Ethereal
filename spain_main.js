@@ -9,8 +9,11 @@ function hideInfo(button) {
 }
 
 
-function drag(event) {
-  event.dataTransfer.setData("text", event.target.className);
+
+
+
+function dragStart(event) {
+  event.dataTransfer.setData('text/plain', event.target.className);
 }
 
 function allowDrop(event) {
@@ -19,13 +22,9 @@ function allowDrop(event) {
 
 function drop(event) {
   event.preventDefault();
-  var className = event.dataTransfer.getData("text");
-  var button = document.querySelector("." + className);
-  
-  // Add your logic to handle the dropped button, e.g., saving it to the cart
-  // You can modify the cart icon or perform any other necessary actions here
-  
-  // Example: Add the button's class name to the cart element
-  var cart = document.querySelector(".cart-dropzone");
-  cart.textContent = className;
+  const draggedItemClass = event.dataTransfer.getData('text/plain');
+  const draggedItem = document.querySelector(`.${draggedItemClass}`);
+  event.target.appendChild(draggedItem);
+  const cartCount = document.querySelector('#cartCount');
+  cartCount.textContent = event.target.childElementCount;
 }
