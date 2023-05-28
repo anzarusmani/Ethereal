@@ -1,0 +1,45 @@
+.football-portugal  {
+    position: relative;
+    left: 525px;
+    top: -375px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .info-card1 {
+    position: absolute;
+    display: none;
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-image: url("assets/boat-ispain.jpg");
+    backdrop-filter: op(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card1 h4 {
+    margin-top: 0;
+  }
+  
+  .boat:hover {
+    background-color: greenyellow;
+  }
+  
+  .boat:hover + .info-card1 {
+    display: block;
+  } 
+  
+  

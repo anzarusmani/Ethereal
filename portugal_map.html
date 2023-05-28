@@ -9,11 +9,12 @@
 
    
     body {
-        padding-top: 495px;
+        padding-top:700px;
       background-image: url('assets/portugal-map-transformed.jpeg');
-      background-size:cover;   
+      background-size:cover;
+      background-position: center;
       background-repeat:no-repeat;
-      justify-content:center ;
+   
     }
     
     
@@ -28,5 +29,26 @@
 
   </style>
 </head>
+
 <body>
+  
+    <div class="football-portugal" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)"></div>
+    <div class="info-card1" id="info-card1">
+      <h2>Beach football in portugal</h2>
+      <p>Experience the stunning coastlines of Portugal with our FIFA grade stadium. Explore heart throbbing games, and charming seaside towns.</p>
+      <p>Discover the rich maritime history and indulge in delicious seafood cuisine. Unforgettable adventures await you on the Mediterranean and Atlantic coasts.</p>
+      <p>Price: $99 per person</p>
+    </div>
+  
+    
+  
+  
+    <div class="cart-icon"  ondragover="allowDrop(event)" ondrop="drop(event)">
+      <!-- <i class="fas fa-shopping-cart"></i> -->
+      <img src="assets/shopping-cart-icon.png" alt="Cart Icon" width="60" height="60">
+      <span id="cartCount">0</span>
+    </div>
+  
+  </body>
+  </html>
   
