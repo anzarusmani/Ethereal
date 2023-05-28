@@ -1,132 +1,223 @@
 .boat {
-    position: relative;
-    left: 327px;
-    top: 175px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 3px solid #242424;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  .info-card1 {
-    position: absolute;
-    display: none;
-    width: 200px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .info-card1 h4 {
-    margin-top: 0;
-  }
-  
-  .boat:hover {
-    background-color: #f3d52b;
-  }
+  position: relative;
+  left: 327px;
+  top: 175px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #242424;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.info-card1 {
+  position: absolute;
+  display: none;
+  bottom: 100px;
+  width: 200px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .boat:hover + .info-card1 {
-    display: block;
-  } 
+.info-card1 h4 {
+  margin-top: 0;
+}
 
-  .trek {
-    position: relative;
-    left: 1070px;
-    top: -454px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 3px solid #242424;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .info-card5 {
-    position: absolute;
-    display: none;
-    width: 200px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .info-card5 h4 {
-    margin-top: 0;
-  }
-  
+.boat:hover {
+  background-color: #2bb0f3;
+}
 
-  .trek:hover {
-    background-color: #f3d52b;
-  }
+.boat:hover + .info-card1 {
+  display: block;
+} 
 
-  .trek:hover + .info-card5 {
-    display: block;
-  } 
 
-  .gliding {
-    position: relative;
-    left: 320px;
-    top: -454px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 3px solid #242424;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .gliding:hover {
-    background-color: #f3d52b;
-  }
 
-  .hotel1 {
-    position: relative;
-    left: 428px;
-    top: -65px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 3px solid #242424;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .hotel1:hover {
-    background-color: #f3d52b;
-  }
 
-  .hotel2 {
-    position: relative;
-    left: 808px;
-    top: -32px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 3px solid #242424;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .hotel2:hover {
-    background-color: #f3d52b;
-  }
+
+
+
+.trek {
+  position: relative;
+  left: 1070px;
+  top: -454px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #242424;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.info-card2 {
+  position: absolute;
+  display: none;
+  bottom: 100px;
+  width: 200px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card2 h4 {
+  margin-top: 0;
+}
+
+
+.trek:hover {
+  background-color: #f3d52b;
+}
+
+.trek:hover + .info-card2 {
+  display: block;
+} 
+
+
+
+
+
+
+
+
+
+.gliding {
+  position: relative;
+  left: 320px;
+  top: -454px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #242424;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.info-card5 {
+  position: absolute;
+  display: none;
+  bottom: 100px;
+  width: 200px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card5 h4 {
+  margin-top: 0;
+}
+
+
+
+.gliding:hover {
+  background-color: #f3d52b;
+}
+.gliding:hover + .info-card5 {
+  display: block;
+} 
+
+
+
+
+
+
+
+
+
+
+.hotel1 {
+  position: relative;
+  left: 428px;
+  top: -65px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #242424;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.info-card3 {
+  position: absolute;
+  display: none;
+  bottom: 100px;
+  width: 200px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card3 h4 {
+  margin-top: 0;
+}
+
+.hotel1:hover {
+  background-color: #f3d52b;
+}
+
+.hotel1:hover + .info-card3 {
+  display: block;
+} 
+
+
+
+
+
+
+.hotel2 {
+  position: relative;
+  left: 808px;
+  top: -32px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #242424;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.info-card4 {
+  position: absolute;
+  display: none;
+  bottom: 100px;
+  width: 200px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card4 h4 {
+  margin-top: 0;
+}
+
+
+.hotel2:hover {
+  background-color: #f3d52b;
+}
+
+.hotel2:hover + .info-card4 {
+  display: block;
+} 
