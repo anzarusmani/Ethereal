@@ -12,10 +12,12 @@
   
   .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: -79px auto;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 5rem;
+    position: relative;
+    left: -61px;
 
   }
   
@@ -29,14 +31,14 @@
   p {
     margin-bottom: 20px;
     line-height: 1.5;
-    color: #555;
+    color: #fff;
   }
   
   ul {
     margin-bottom: 20px;
     list-style-type: disc;
     padding-left: 20px;
-    color: #555;
+    color: #fff;
   }
   
   button.back-button {

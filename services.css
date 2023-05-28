@@ -12,10 +12,12 @@
   
   .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: -79px auto;
     padding: 40px;
     border-radius: 5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    left: -61px;
   }
   
   h1 {
@@ -28,13 +30,13 @@
   h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #555;
+    color: #fff;
   }
   
   p {
     margin-bottom: 20px;
     line-height: 1.5;
-    color: #555;
+    color: #fff;
   }
   
   .service {
