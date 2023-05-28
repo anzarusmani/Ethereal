@@ -4,9 +4,30 @@
   <script src="portugual_main.js"></script>
   <title>Ethereal</title>
   <link rel="stylesheet" type="text/css" href="portugal_map.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
   <style>
 
+
+.flash-message {
+      position: fixed;
+      bottom: 110px;
+      left: 20px;
+      height: 100px;
+      width:400px;
+      background-color: #f8f8f8;
+      padding: 25px 10px;
+      background-image: url('assets/boat-ispain.png');
+      border-radius: 70px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: flashAnimation 1s ease-in-out;
+    }
+
+    @keyframes flashAnimation {
+      0% { opacity: 0; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.1); }
+      100% { opacity: 0; transform: scale(1); }
+    }
    
     body {
         padding-top:654px;
@@ -27,10 +48,18 @@
       cursor: pointer;
     }
 
+    .message{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 600;
+    }
+
   </style>
 </head>
 
 <body>
+  <div class="back-arrow" onclick="window.location.href='index.html'">
+    <i class="fas fa-arrow-left"></i>
+  </div>
   
     <div class="football-portugal" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)"></div>
     <div class="info-card1" id="info-card1">
@@ -50,8 +79,8 @@
   
     <div class="hotel1" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)"></div>
   <div class="info-card4" id="info-card4">
-  <h3>Finca Hotel</h3>
-  <p>Welcome to Finca, a luxurious hotel nestled in the heart of Spain. Experience unparalleled comfort, impeccable service, and stunning views in our enchanting countryside retreat.</p>
+  <h3>Algarve Beach Resort</h3>
+  <p>Welcome to Algarve, a luxurious hotel nestled in the heart of Spain. Experience unparalleled comfort, impeccable service, and stunning views in our enchanting countryside retreat.</p>
   <p>Surrounded by lush greenery and picturesque landscapes, Finca offers a tranquil oasis for those seeking relaxation and rejuvenation. Our elegantly designed rooms and suites provide a blend of modern amenities and traditional charm, ensuring a comfortable and unforgettable stay.</p>
   <p>Price: Starting from $250 per night</p>
 </div>
@@ -65,12 +94,34 @@
 <p>Price: Starting from $150 per session</p>
 </div>
   
-    <div class="cart-icon"  ondragover="allowDrop(event)" ondrop="drop(event)">
+    <div class="cart-icon"  ondragover="allowDrop(event)" ondrop="drop(event)" onclick="window.location.href='cart.html'">
       <!-- <i class="fas fa-shopping-cart"></i> -->
       <img src="assets/shopping-cart-icon.png" alt="Cart Icon" width="60" height="60">
       <span id="cartCount">0</span>
     </div>
   
+    <div class="flash-message" id="flashMessage">
+      <div class="message" id="message">
+      <ul>
+        <p>Welcome! Hover over the buttons to discover information about activities and accommodations. You can also drag the buttons to the cart to add them. Enjoy your experience!</p>
+      </ul>
+    </div>
+  </div>
+  <script>
+    
+    const flashMessage = document.getElementById('flashMessage');
+  
+   
+    const removeFlashMessage = () => {
+      flashMessage.parentNode.removeChild(flashMessage);
+    };
+  
+  
+    flashMessage.addEventListener('click', removeFlashMessage);
+  
+    const flashMessageDuration = 10000; 
+    setTimeout(removeFlashMessage, flashMessageDuration);
+  </script>
   </body>
   </html>
   

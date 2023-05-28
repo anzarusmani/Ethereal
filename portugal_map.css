@@ -13,20 +13,31 @@
     cursor: pointer;
   }
 
+  .back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  
+
   .info-card1 {
     position: absolute;
     display: none;
     bottom: 100px;
     width: 200px;
     padding: 10px;
-    background-image: url("assets/boat-ispain.jpg");
+    background-image: url('assets/gliding-ispain.png');
     backdrop-filter: op(5px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -68,7 +79,7 @@
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -108,7 +119,7 @@
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -133,7 +144,7 @@
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
