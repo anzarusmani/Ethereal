@@ -55,7 +55,8 @@ background-size: cover;
     text-decoration: underline;
   }
  
-  .logo{
+  .logo{  
+    /* text-shadow: 0px 0px 0px 15px bisque; */
     margin-top: 0%;
     width: 900px;
     padding: 0ch;
