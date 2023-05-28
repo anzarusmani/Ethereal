@@ -82,7 +82,8 @@ background-size: cover;
       background-position: 0% 50%;
     }
   }
-  .hero{
+  /* when removed for hero, causes a div container aboute the nav */
+  /* .hero{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +94,8 @@ background-size: cover;
     padding: 200px 0;
     position: relative;
     overflow: hidden;
-  }
+  } */
+
   .video-bg{
     position: absolute;
     top: 0;
