@@ -155,14 +155,18 @@
 
 .text
 {
-  width:100%;
-  font-size: 15px;
-  background-color:#eeebeb08;
+    width: 115%;
+    font-size: 17px;
+    background-color: #eeebeb08;
+    position: relative;
+    left: -12px;
+    border-radius: 96px;
+    border-block-color: #eeebeb08;
   
 }
-.placeholder{
-    font-size: 20px;
-    color:#30090913 ;
+.placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1;
 }
 
   h1 {
