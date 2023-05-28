@@ -23,7 +23,8 @@ background-size: cover;
     height: 100px;
     width: 100%;
   }
-  
+
+
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -37,7 +38,14 @@ background-size: cover;
   
   nav ul li a {
     color: #333;
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
+    
+  }
+  .nav li .cart-icon {
+    /* Add any desired margin */
+    margin-right: 20px;
   }
   
   nav ul li a:hover {

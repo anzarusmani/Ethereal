@@ -56,6 +56,7 @@
   
   input[type="submit"]:hover {
     background-color: #555;
+    margin-bottom: 100px;
   }
 
   button.back-button {
