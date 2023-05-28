@@ -44,8 +44,11 @@ background-size: cover;
     
   }
   .nav li .cart-icon {
-    /* Add any desired margin */
     margin-right: 20px;
+ 
+  }
+  .nav li:hover .cart-icon {
+    text-decoration: underline;
   }
   
   nav ul li a:hover {
