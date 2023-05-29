@@ -18,7 +18,7 @@
     border-radius: 5rem;
     position: relative;
     left: -61px;
-
+    backdrop-filter: blur(95px);
   }
   
   h1 {

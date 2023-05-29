@@ -14,7 +14,7 @@
     margin: 0 auto;
     padding: 40px;
     border-radius: 5rem;
-
+    backdrop-filter: blur(95px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   }
   
