@@ -75,6 +75,27 @@ body {
     margin-bottom: 10px;
   }
   
+  .tt1{    
+    
+    width: 190px;
+    position: relative;
+    font-size: 23px;
+    left: 576px;
+    color: #111111;
+    background-color: #31343457;
+
+  }
+  .tt{    
+    
+    width: 190px;
+    top: -50px;
+    position: relative;
+    font-size: 23px;
+    left: 54px;
+    color: #111111;
+    background-color: #31343457;
+
+  }
   .cart-item h3 {
     margin: 0;
     font-size: 18px;
