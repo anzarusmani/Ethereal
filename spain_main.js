@@ -14,6 +14,7 @@ function drop(event) {
   var cartCount = document.getElementById("cartCount");
   var count = parseInt(cartCount.innerText) + 1;
   cartCount.innerText = count;
+  
 
   var draggedButton = document.querySelector("." + data); // Get the dragged button
   var correspondingInfoCard = draggedButton.nextElementSibling; // Get the corresponding info card
