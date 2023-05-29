@@ -1,7 +1,7 @@
 .boatz  {
     position: relative;
-    left: 550px;
-    top: 10px;
+    left: 590px;
+    top: -300px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -56,8 +56,8 @@
 
   .underg-museum {
     position: relative;
-    left: 400px;
-    top: -85px;
+    left: 950px;
+    top: -300px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -97,8 +97,8 @@
 
   .hotel1 {
     position: relative;
-    left: 900px;
-    top: -590px;
+    left: 1100px;
+    top: -450px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -151,8 +151,8 @@
   
   .hotel2-ven {
     position: relative;
-    left: 300px;
-    top: -480px;
+    left: 1120px;
+    top: -4px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
