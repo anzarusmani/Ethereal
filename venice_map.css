@@ -1,0 +1,186 @@
+.boatz  {
+    position: relative;
+    left: 550px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  
+
+  .info-card1 {
+    position: absolute;
+    display: none;
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-image: url('assets/gliding-ispain.png');
+    backdrop-filter: op(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card1 h4 {
+    margin-top: 0;
+  }
+  
+  .boatz:hover {
+    background-color: greenyellow;
+  }
+  
+  .boatz:hover + .info-card1 {
+    display: block;
+  } 
+  
+
+  .underg-museum {
+    position: relative;
+    left: 400px;
+    top: -85px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .info-card3 {
+    position: absolute;
+    background-image: url("assets/trekking-spain.png");
+    display: none;
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card3 h4 {
+    margin-top: 0;
+  }
+  .underg-museum:hover {
+    background-color: greenyellow;
+  }
+  
+  .underg-museum:hover + .info-card2 {
+    display: block;
+  } 
+
+
+
+  .hotel1 {
+    position: relative;
+    left: 900px;
+    top: -590px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .info-card4 {
+    position: absolute;
+    display: none;
+    background-image: url("assets/boat-ispain.png");
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card4 h4 {
+    margin-top: 0;
+  }
+
+  .hotel1:hover {
+    background-color: greenyellow;
+  }
+  
+  .hotel1:hover + .info-card4 {
+    display: block;
+  } 
+  
+  .info-card5 {
+    position: absolute;
+    display: none;
+    background-image: url("assets/gliding-ispain.png");
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+  .hotel2-ven {
+    position: relative;
+    left: 300px;
+    top: -480px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+     background-color: aqua;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .info-card5 h4 {
+    margin-top: 0;
+  }
+  
+  
+  
+  .hotel2-ven:hover {
+    background-color: greenyellow;
+  }
+  .hotel2-ven:hover + .info-card5 {
+    display: block;
+  } 
+
+  
+.cart-icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
