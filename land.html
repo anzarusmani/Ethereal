@@ -72,9 +72,33 @@
       font-size: 34px;
       font-weight: bold;
     }
+    
+    
+  </style>
+
+  <style> 
+   .transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+    z-index: 9999;
+  }
+
+  .is-active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    
   </style>
   
 <body>
+  <div class="transition"></div>
 <div>
   
   
@@ -102,29 +126,30 @@
   
 </div>
 
-
-
-
-
 <div class="img22">
-  <div class="card" style="cursor: pointer;" onclick="window.location.href='spain_map.html'">
+
+  <div class="card" style="cursor: pointer;" data-href='spain_map.html'">
+
     <img src="assets\spain.jpg" alt="Image 1">
     <div class="overlay">
       <p class="overlay-text">Spain</p>
     </div>
   </div>
-  <div class="card" style="cursor: pointer;" onclick="window.location.href='venice_map.html'">
+  <div class="card" style="cursor: pointer;" data-href='venice_map.html'">
     <img src="assets\Martires del cambio.jpg" alt="Image 2">
     <div class="overlay">
       <p class="overlay-text">Venice</p>
     </div>
   </div>
-  <div class="card" style="cursor: pointer;" onclick="window.location.href='portugal_map.html'">
+  <div class="card" style="cursor: pointer;" data-href='portugal_map.html'">
     <img src="assets\Porto.jpg" alt="Image 3">
     <div class="overlay">
       <p class="overlay-text">Portugal</p>
     </div>
   </div>
 </div>
+
+<script src="main.js"></script>
+
 </body>
 </html>
