@@ -29,6 +29,26 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
+.flash-message {
+      position: fixed;
+      bottom: 20px;
+    left: 1100px;
+    height: 60px;
+    width: 390px;
+      background-color: #f8f8f8;
+      padding: 25px 10px;
+      background-image: url('assets/boat-ispain.png');
+      border-radius: 70px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: flashAnimation 1s ease-in-out;
+    }
+
+    @keyframes flashAnimation {
+      0% { opacity: 0; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.1); }
+      100% { opacity: 0; transform: scale(1); }
+    }
+
 
     .img22{
     display:flex;
@@ -151,6 +171,30 @@
     </div>
   </div>
 </div>
+
+<div class="flash-message" id="flashMessage">
+  <div class="message" id="message">
+  <ul>
+    <p>"Explore our breathtaking locations! Click on each card to discover unique destinations and find your perfect getaway."</p>
+  </ul>
+</div>
+</div>
+
+<script>
+  
+  const flashMessage = document.getElementById('flashMessage');
+
+ 
+  const removeFlashMessage = () => {
+    flashMessage.parentNode.removeChild(flashMessage);
+  };
+
+
+  flashMessage.addEventListener('click', removeFlashMessage);
+
+  const flashMessageDuration = 15000; 
+  setTimeout(removeFlashMessage, flashMessageDuration);
+</script>
 
 <script src="main.js"></script>
 

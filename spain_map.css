@@ -237,3 +237,63 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+
+
+.back-arrow {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+
+
+.flash-message {
+      position: fixed;
+      bottom: 110px;
+      left: 20px;
+      height: 100px;
+      width:400px;
+      background-color: #f8f8f8;
+      padding: 25px 10px;
+      background-image: url('assets/boat-ispain.png');
+      border-radius: 70px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: flashAnimation 1s ease-in-out;
+    }
+
+    @keyframes flashAnimation {
+      0% { opacity: 0; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.1); }
+      100% { opacity: 0; transform: scale(1); }
+    }
+   
+    body {
+        padding-top: 495px;
+      background-image: url('assets/spainmap.jpg');
+      background-size:cover;
+      background-position: center;
+      background-repeat:repeat;
+   
+      justify-content:center ;
+    }
+    
+    
+    .cart-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 40px;
+      font-size: 24px;
+      /* color: #000; */
+      cursor: pointer;
+    }
+    .message{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 600;
+    }
+
+
+    
