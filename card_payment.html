@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Payment</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #f6f6f8, #e1e1e6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: linear-gradient(45deg, #ffffff, #d7e1ec);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Enter Card Details</h1>
+
+    <form>
+      <input type="text" name="cardNumber" placeholder="Card Number" required>
+      <input type="text" name="expirationDate" placeholder="Expiration Date (MM/YY)" required>
+      <input type="text" name="cvv" placeholder="CVV" required>
+      <button type="submit"><a href="payment_success.html" style="text-decoration:none">Pay Now</button>
+    </form>
+  </div>
+</body>
+</html>
