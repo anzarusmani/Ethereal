@@ -12,8 +12,8 @@
 
 .flash-message {
       position: fixed;
-      bottom: 110px;
-      left: 20px;
+      bottom: 40px;
+      left: 520px;
       height: 100px;
       width:400px;
       background-color: #f8f8f8;
@@ -31,7 +31,7 @@
     }
    
     body {
-        padding-top:654px;
+        padding-top:624px;
       background-image: url('assets/portugal-map-transformed.jpeg');
       background-size:cover;
       background-position: center;
@@ -56,6 +56,33 @@
 
   </style>
 </head>
+
+<button class="floating-button" onclick="toggleTimeline()"><span class="logo">T</span></button>
+
+<div class="timeline" id="timeline">
+  <div class="timeline-item">
+    <h3>Beach Football</h3>
+    <p>Time: At 7:30 A.M.</p>
+    <p>Price: $5 per person</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Mountain Sports</h3>
+    <p>Time: At 2:30 P.M.</p>
+    <p>Price: Starting from $1 per person</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Algarve Beach Resort</h3>
+    <p>Check-In Time: At 11:00 A.M.</p>
+    <p>Price: $200 per night</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Surviving an Island Game</h3>
+    <p>Time: At 10:00 A.M.</p>
+    <p>Price: Starting from $5 per session</p>
+  </div>
+</div>
+6
+
 
 <body>
   <div class="back-arrow" onclick="window.location.href='land.html'">
@@ -104,7 +131,7 @@
     <div class="flash-message" id="flashMessage">
       <div class="message" id="message">
       <ul>
-        <p>Welcome! Hover over the buttons to discover information about activities and accommodations. You can also drag the buttons to the cart to add them. Enjoy your experience!</p>
+        <p>Discover activities and accommodations by hovering over the buttons. Add them to the cart by dragging. Click on 'T' to explore the timeline. Enjoy your experience!</p>
       </ul>
     </div>
   </div>

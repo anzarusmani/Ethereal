@@ -30,12 +30,12 @@
     bottom: 100px;
     width: 200px;
     padding: 10px;
-    background-image: url('assets/gliding-ispain.png');
+    /* background-image: url('assets/gliding-ispain.png'); */
     backdrop-filter: op(5px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #f9f9f9;
+    background-color:rgb(189, 240, 223);
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -71,12 +71,12 @@
   
   .info-card3 {
     position: absolute;
-    background-image: url("assets/trekking-spain.png");
+    /* background-image: url("assets/trekking-spain.png"); */
     display: none;
     bottom: 100px;
     width: 200px;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color:rgb(189, 240, 223);
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -112,11 +112,11 @@
   .info-card4 {
     position: absolute;
     display: none;
-    background-image: url("assets/boat-ispain.png");
+    /* background-image: url("assets/boat-ispain.png"); */
     bottom: 100px;
     width: 200px;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color:rgb(189, 240, 223);
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -137,11 +137,11 @@
   .info-card5 {
     position: absolute;
     display: none;
-    background-image: url("assets/gliding-ispain.png");
+    /* background-image: url("assets/gliding-ispain.png"); */
     bottom: 100px;
     width: 200px;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color:rgb(189, 240, 223);
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -184,3 +184,51 @@
     background-size: cover;
 
   }
+
+
+  
+.floating-button {
+  position: fixed;
+  bottom: 334px;
+  right: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.timeline {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 88px;
+  width: 200px;
+  padding: 10px;
+  background-color:rgb(189, 240, 223);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item {
+  margin-bottom: 10px;
+}
+
+.timeline-item h3 {
+  margin: 0;
+}
+
+.timeline-item p {
+  margin: 5px 0 0 0;
+}
+

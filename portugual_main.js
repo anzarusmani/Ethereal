@@ -34,3 +34,7 @@ function hideInfo(button) {
 }
 
 
+function toggleTimeline() {
+  var timeline = document.getElementById("timeline");
+  timeline.style.display = timeline.style.display === "none" ? "block" : "none";
+}

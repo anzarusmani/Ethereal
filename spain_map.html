@@ -21,11 +21,11 @@
 
 .flash-message {
       position: fixed;
-      bottom: 110px;
-      left: 20px;
+      bottom: 40px;
+      left: 520px;
       height: 100px;
       width:400px;
-      background-color: #f8f8f8;
+      /* background-color: #f8f8f8; */
       padding: 25px 10px;
       background-image: url('assets/boat-ispain.png');
       border-radius: 70px;
@@ -44,7 +44,7 @@
       background-image: url('assets/spainmap.jpg');
       background-size:cover;
       background-position: center;
-      background-repeat:repeat;
+      background-repeat:no-repeat;
    
       justify-content:center ;
     }
@@ -67,6 +67,37 @@
 </head>
 <body>
 
+  <button class="floating-button" onclick="toggleTimeline()"><span class="logo">T</span></button>
+
+<div class="timeline" id="timeline">
+  <div class="timeline-item">
+    <h3>Boating in Spain</h3>
+    <p>Time: At 7:30 A.M.</p>
+    <p>Price: $99 per person</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Trekking in Spain</h3>
+    <p>Time: At 9:30 A.M.</p>
+    <p>Price: Starting from $150 per person</p>
+  </div>
+  <div class="timeline-item">
+    <h3>4 Seasons Hotel</h3>
+    <p>Check-In Time: At 11:00 A.M.</p>
+    <p>Price: $200 per night</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Finca Hotel</h3>
+    <p>Check-In Time: At 11:00 A.M.</p>
+    <p>Price: Starting from $250 per night</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Gliding in Spain</h3>
+    <p>Time: At 10:00 A.M.</p>
+    <p>Price: Starting from $150 per session</p>
+  </div>
+</div>
+6
+
   
 
 
@@ -75,13 +106,14 @@
   </div>
   
   
-  <div class="boat" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)" ></div>
+  <div class="boat" onmouseover="showInfo(this)" onmouseout="hideInfo(this)"  draggable="true" ondragstart="dragStart(event)" ></div>
   <div class="info-card1" id="info-card1">
     <h2>Boating in Spain</h2>
     <p>Experience the stunning coastlines of Spain with our boating tours. Explore crystal-clear waters, hidden coves, and charming seaside towns.</p>
     <p>Discover the rich maritime history and indulge in delicious seafood cuisine. Unforgettable adventures await you on the Mediterranean and Atlantic coasts.</p>
     <p>Price: $99 per person</p>
   </div>
+
 
   <div class="hotel1"  onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)" ></div>
   <div class="info-card3" id="info-card3">
@@ -129,10 +161,11 @@
   <div class="flash-message" id="flashMessage">
     <div class="message" id="message">
     <ul>
-      <p>Welcome! Hover over the buttons to discover information about activities and accommodations. You can also drag the buttons to the cart to add them. Enjoy your experience!</p>
+      <p>Discover activities and accommodations by hovering over the buttons. Add them to the cart by dragging. Click on 'T' to explore the timeline. Enjoy your experience!</p>
     </ul>
   </div>
 </div>
+
 
 
 <script>

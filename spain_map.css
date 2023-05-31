@@ -19,12 +19,12 @@
   bottom: 100px;
   width: 200px;
   padding: 10px;
-  background-image: url("assets/gliding-ispain.png");
+  background-color:rgb(189, 240, 223);
   backdrop-filter: op(5px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   border: 1px solid #ddd;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -65,12 +65,12 @@
 
 .info-card2 {
   position: absolute;
-  background-image: url("assets/trekking-spain.png");
+  /* background-image: url("assets/trekking-spain.png"); */
   display: none;
   bottom: 100px;
   width: 200px;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color:rgb(189, 240, 223);
   border: 1px solid #ddd;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -115,11 +115,11 @@
 .info-card5 {
   position: absolute;
   display: none;
-  background-image: url("assets/gliding-ispain.png");
+  /* background-image: url("assets/gliding-ispain.png"); */
   bottom: 100px;
   width: 200px;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color:rgb(189, 240, 223);
   border: 1px solid #ddd;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -167,9 +167,9 @@
   display: none;
   bottom: 100px;
   width: 200px;
-  background-image: url("assets/4seasons-spain.png");
+  /* background-image: url("assets/4seasons-spain.png"); */
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color:rgb(189, 240, 223);
   border: 1px solid #ddd;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -209,11 +209,11 @@
 .info-card4 {
   position: absolute;
   display: none;
-  background-image: url("assets/boat-ispain.png");
+  /* background-image: url("assets/boat-ispain.png"); */
   bottom: 100px;
   width: 200px;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color:rgb(189, 240, 223);
   border: 1px solid #ddd;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -251,49 +251,51 @@
 }
 
 
-.flash-message {
-      position: fixed;
-      bottom: 110px;
-      left: 20px;
-      height: 100px;
-      width:400px;
-      background-color: #f8f8f8;
-      padding: 25px 10px;
-      background-image: url('assets/boat-ispain.png');
-      border-radius: 70px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      animation: flashAnimation 1s ease-in-out;
-    }
-
-    @keyframes flashAnimation {
-      0% { opacity: 0; transform: scale(0.9); }
-      50% { opacity: 1; transform: scale(1.1); }
-      100% { opacity: 0; transform: scale(1); }
-    }
-   
-    body {
-        padding-top: 495px;
-      background-image: url('assets/spainmap.jpg');
-      background-size:cover;
-      background-position: center;
-      background-repeat:repeat;
-   
-      justify-content:center ;
-    }
-    
-    
-    .cart-icon {
-      position: fixed;
-      bottom: 20px;
-      right: 40px;
-      font-size: 24px;
-      /* color: #000; */
-      cursor: pointer;
-    }
-    .message{
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: 600;
-    }
 
 
-    
+.floating-button {
+  position: fixed;
+  bottom: 334px;
+  right: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.timeline {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 88px;
+  width: 200px;
+  padding: 10px;
+  background-color:rgb(189, 240, 223);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item {
+  margin-bottom: 10px;
+}
+
+.timeline-item h3 {
+  margin: 0;
+}
+
+.timeline-item p {
+  margin: 5px 0 0 0;
+}
+
+

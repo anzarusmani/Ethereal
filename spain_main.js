@@ -36,3 +36,22 @@ function hideInfo(button) {
 }
 
 
+function showCard(cardId) {
+  var card = document.getElementById(cardId);
+  card.style.display = "block";
+  document.querySelector('.overlay').style.display = "block";
+}
+
+function hideCard() {
+  var infoCards = document.getElementsByClassName('info-card');
+  for (var i = 0; i < infoCards.length; i++) {
+    infoCards[i].style.display = "none";
+  }
+  document.querySelector('.overlay').style.display = "none";
+}
+
+
+function toggleTimeline() {
+  var timeline = document.getElementById("timeline");
+  timeline.style.display = timeline.style.display === "none" ? "block" : "none";
+}
