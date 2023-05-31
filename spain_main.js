@@ -2,7 +2,27 @@
 
 function dragStart(event) {
   event.dataTransfer.setData('text/plain', event.target.className);
+  const item = event.target;
+  const priceElement = item.nextElementSibling.querySelector("p");
+  const priceText = priceElement.textContent.trim();
+  const currencyRegex = /(\$[\d.,]+)/;
+  const heading = item.nextElementSibling.querySelector("h3").textContent;
+
+  const priceMatches = priceText.match(currencyRegex);
+  const priceWithCurrency = priceMatches ? priceMatches[0] : getRandomPrice();
+
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  cartItems.push({ heading, price: priceWithCurrency });
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
 }
+
+function getRandomPrice() {
+  const randomValue = Math.floor(Math.random() * 100) + 1; // Generate a random value between 1 and 100
+  const randomCurrency = "$"; // Assign a default currency symbol
+
+  return randomCurrency + randomValue;
+}
+
 
 function allowDrop(event) {
   event.preventDefault();

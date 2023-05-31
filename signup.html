@@ -34,6 +34,10 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 
   // Initialize Firebase
     const signupForm = document.getElementById('signupForm');
+    const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth(app);
+
 
     signupForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -53,9 +57,6 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
           console.log("Signup error:", error.message);
         });
     });
-    const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const auth = getAuth(app);
 
   </script>
 </head>

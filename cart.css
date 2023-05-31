@@ -78,23 +78,25 @@ body {
   
   .tt1{    
     
-    width: 190px;
+    width: 200px;
     position: relative;
     font-size: 23px;
     left: 576px;
     color: #111111;
     background-color: #31343457;
+    border-radius: 40px;
 
   }
   .tt{    
     
-    width: 190px;
+    width: 200px;
     top: -50px;
     position: relative;
     font-size: 23px;
     left: 54px;
     color: #111111;
     background-color: #31343457;
+    border-radius: 40px;
 
   }
   .cart-item h3 {
@@ -138,4 +140,38 @@ body {
     margin: 0;
   }
   
+  .cart-items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 10px;
+    height: 200px;
+    white-space: nowrap; /* Ensure items stay in a single line */
+    scrollbar-width: none; /* For Firefox */
+    scrollbar-color: none; 
+  }
   
+  .cart-item {
+    border-radius: 40px;
+    flex: 0 0 auto; /* Ensure items don't grow or shrink */
+    margin-right: 10px; 
+    max-width: 200px; /* Adjust the value as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;/* Add spacing between items */
+    background-color: aquamarine;
+    backdrop-filter: blur(4px);
+    background-image: url(assets/trekking-spain.png);
+  }
+ 
+  .cart-items::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+  .cart-item p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+

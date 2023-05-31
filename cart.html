@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <script src="cart.js"></script>
+  
   <title>Ethereal</title>
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="cart.css">
@@ -33,30 +35,57 @@
   <main>
     <div class="container">
       <h2>Checkout Cart</h2>
+      <div id="billDiv" style="display: none;">Bill</div>
 
-      <div class="cart-items">
-        <!-- Display cart items here -->
-        <div class="cart-item">
-          <img src="Porto.jpg" alt="Product 1">
-          <h3>Product 1</h3>
-          <p>Price: $10</p>
-        </div>
+      <div class="cart-items"  id="cartItemsContainer">
 
         <div class="cart-item">
-          <img src="spain.jpg" alt="Product 2">
-          <h3>Product 2</h3>
-          <p>Price: $15</p>
+          <h3 id="cartItemHeading"></h3>
+          <p id="cartItemPrice"></p>
         </div>
-
-        <!-- Add more cart items as needed -->
       </div>
 
       <div class="checkout-buttons">
-        <p class="tt1">6969</p>
+        <p class="tt1"></p>
         <p class="tt">Payable Amount:</p>
-        <a href="#"><button>Proceed to Payment</button></a>
-        <a href="land.html"><button>Continue Shopping</button></a>
+        <a href="#"><button id="proceedToPaymentBtn" >Proceed to Payment</button></a>
+        <a href="land.html"><button id="continueShoppingBtn">Continue Shopping</button></a>
       </div>
+
+      <script>
+
+const proceedButton = document.getElementById('proceedToPaymentBtn');
+const continueButton = document.getElementById('continueShoppingBtn');
+const cartItemsContainer = document.getElementById('cartItemsContainer');
+
+proceedButton.addEventListener('click', function() {
+  // Code to be executed when the "Proceed to Payment" button is clicked
+  clearCartItems();
+  clearStorage();
+});
+
+continueButton.addEventListener('click', function() {
+  // Code to be executed when the "Continue Shopping" button is clicked
+  clearCartItems();
+  clearStorage();
+});
+
+function clearCartItems() {
+  while (cartItemsContainer.firstChild) {
+    cartItemsContainer.removeChild(cartItemsContainer.firstChild);
+  }
+}
+
+function clearStorage() {
+  localStorage.clear();
+}
+
+  
+
+      </script>
+    
+
+
     </div>
   </main>
 
