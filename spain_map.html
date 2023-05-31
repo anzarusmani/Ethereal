@@ -19,19 +19,20 @@
 }
 
 
-.flash-message {
-      position: fixed;
-      bottom: 40px;
-      left: 520px;
-      height: 100px;
-      width:400px;
-      /* background-color: #f8f8f8; */
-      padding: 25px 10px;
-      background-image: url('assets/boat-ispain.png');
-      border-radius: 70px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      animation: flashAnimation 1s ease-in-out;
-    }
+
+    .flash-message {
+  position: fixed;
+  bottom: 40px;
+  left: 520px;
+  height: 100px;
+  width: 400px;
+  padding: 25px 10px;
+  background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
+  border-radius: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: flashAnimation 1s ease-in-out;
+}
+
 
     @keyframes flashAnimation {
       0% { opacity: 0; transform: scale(0.9); }

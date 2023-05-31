@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Gateway</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #cfd9df, #e2ebf0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: linear-gradient(45deg, #ffffff, #d7e1ec);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .payment-methods {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      background: linear-gradient(45deg, #fe9c8f, #f9d29a);
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Payment Gateway</h1>
+    
+    <h2>Select Payment Method</h2>
+    
+    <div class="payment-methods">
+      <button onclick="redirectToCardPayment()">Card Payment</button>
+      <button onclick="redirectToScanAndPay()">Scan and Pay</button>
+    </div>
+  </div>
+
+  <script>
+    function redirectToCardPayment() {
+      // Redirect to card payment page
+      window.location.href = "card_payment.html";
+    }
+
+    function redirectToScanAndPay() {
+      // Redirect to scan and pay page
+      window.location.href = "scan_and_pay.html";
+    }
+  </script>
+</body>
+</html>
