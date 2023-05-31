@@ -7,6 +7,7 @@
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="signup.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  
 
   <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
@@ -16,6 +17,11 @@
   
 
   <script type="module">
+
+import { initializeApp } from 'firebase/app';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { getAnalytics } from 'firebase/analytics';
+
   
     // Your web app's Firebase configuration
     const firebaseConfig = {
