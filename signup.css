@@ -155,11 +155,11 @@
 
 .text
 {
-    width: 115%;
+    width: 108%;
     font-size: 17px;
     background-color: #eeebeb08;
     position: relative;
-    left: -12px;
+    left: -8px;
     border-radius: 96px;
     border-block-color: #eeebeb08;
   
