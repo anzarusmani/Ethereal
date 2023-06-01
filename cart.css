@@ -123,6 +123,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     margin-right: 10px;
+    border-radius: 20px;
   }
   
   .checkout-buttons button:last-child {
