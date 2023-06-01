@@ -73,5 +73,12 @@ function hideCard() {
 
 function toggleTimeline() {
   var timeline = document.getElementById("timeline");
-  timeline.style.display = timeline.style.display === "none" ? "block" : "none";
+
+  if (timeline.style.display === "none") {
+    timeline.style.display = "block";
+    timeline.classList.add("show-animation");
+  } else {
+    timeline.style.display = "none";
+    timeline.classList.remove("show-animation");
+  }
 }

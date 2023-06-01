@@ -39,6 +39,7 @@
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: popup 0.3s ease;
   }
   
   .info-card1 h4 {
@@ -81,6 +82,7 @@
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: popup 0.3s ease;
   }
   
   .info-card3 h4 {
@@ -121,6 +123,8 @@
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    animation: popup 0.3s ease;
   }
   
   .info-card4 h4 {
@@ -146,6 +150,7 @@
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: popup 0.3s ease;
   }
 
 
@@ -180,21 +185,27 @@
   
   
   
-  .floating-button {
-    position: fixed;
-    bottom: 334px;
-    right: 28px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ff0000;
-    color: #ffffff;
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    
-  }
+ 
+.floating-button {
+  position: fixed;
+  bottom: 334px;
+  right: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
+
   
   .logo {
     font-weight: bold;
@@ -207,10 +218,22 @@
     right: 88px;
     width: 200px;
     padding: 10px;
-    background-color:rgb(189, 240, 223);
+    background-color: rgb(189, 240, 223);
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: popup1 0.5s ease;
+  }
+  
+  @keyframes popup1 {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
   
   .timeline-item {
@@ -224,5 +247,15 @@
   .timeline-item p {
     margin: 5px 0 0 0;
   }
-  
-  
+
+
+  @keyframes popup {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

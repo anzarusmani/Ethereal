@@ -133,10 +133,18 @@
     </div>
   </div>
   <script>
-      function toggleTimeline() {
-    var timeline = document.getElementById("timeline");
-    timeline.style.display = timeline.style.display === "none" ? "block" : "none";
+    function toggleTimeline() {
+  var timeline = document.getElementById("timeline");
+
+  if (timeline.style.display === "none") {
+    timeline.style.display = "block";
+    timeline.classList.add("show-animation");
+  } else {
+    timeline.style.display = "none";
+    timeline.classList.remove("show-animation");
   }
+}
+
   </script>
   <script>
     
