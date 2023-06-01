@@ -159,5 +159,13 @@
   </div>
   
   <script src="https://kit.fontawesome.com/5d6b9042f3.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const totalPrice = localStorage.getItem('totalPrice');
+      const amountElement = document.getElementById('amount');
+      amountElement.textContent = totalPrice ? totalPrice + '$' : '0$';
+      localStorage.removeItem('totalPrice');
+    });
+    </script>
 </body>
 </html>
