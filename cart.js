@@ -36,7 +36,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Code to be executed when the "Proceed to Payment" button is clicked
     cartItemsContainer.innerHTML = ""; // Clear the content of the container
     localStorage.removeItem("cartItems"); // Remove the cart items from localStorage
-    tt1.textContent = ""; // Clear the total price
+    const totalPrice = tt1.textContent;
+    localStorage.setItem('totalPrice', totalPrice);
+    window.location.href = 'payment.html';
+    // tt1.textContent = ""; // Clear the total price
+
   });
 
   continueButton.addEventListener("click", function() {
@@ -46,3 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
     tt1.textContent = ""; // Clear the total price
   });
 });
+
+
+

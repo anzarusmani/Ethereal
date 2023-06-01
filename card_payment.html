@@ -36,15 +36,7 @@
          border-radius: 4px;
        }
    
-       .payment-status {
-         width: 100px;
-         height: 30px;
-         margin: 10px auto;
-         background-color: #4caf50;
-         color: #fff;
-         border-radius: 4px;
-         line-height: 30px;
-       }
+     
    
        .amount-box {
          padding: 10px;
@@ -61,7 +53,7 @@
          background-color: #4caf50;
          color: #fff;
          border: none;
-         border-radius: 4px;
+         border-radius: 23px;
          cursor: pointer;
        }
    
@@ -86,6 +78,15 @@
          <button type="submit" style="background: radial-gradient(circle at 10% 20%, rgb(4, 159, 108) 0%, rgb(194, 254, 113) 90.1%);"><a href="payment_success.html" style="text-decoration:none">Pay Now</a></button>
        </form>
      </div>
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const totalPrice = localStorage.getItem('totalPrice');
+        const amountElement = document.getElementById('amount');
+        amountElement.textContent = totalPrice ? totalPrice + '$' : '0$';
+        localStorage.removeItem('totalPrice');
+      });
+      </script>
+      
    </body>
    </html>
    
