@@ -257,6 +257,7 @@
 }
 
 
+
 .floating-button {
   position: fixed;
   bottom: 334px;
@@ -264,7 +265,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ff0000;
+  background-color: #7ba9c0;
   color: #ffffff;
   font-size: 24px;
   border: none;
@@ -279,45 +280,46 @@
 
 
 .logo {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .timeline {
-  display: none;
-  position: fixed;
-  bottom: 100px;
-  right: 88px;
-  width: 200px;
-  padding: 10px;
-  background-color: rgb(189, 240, 223);
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  animation: popup1 0.5s ease;
+display: none;
+position: fixed;
+bottom: 100px;
+right: 88px;
+width: 200px;
+padding: 10px;
+background-color: rgb(189, 240, 223);
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+animation: popup1 0.5s ease;
 }
 
 @keyframes popup1 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+0% {
+  opacity: 0;
+  transform: scale(0.5);
+}
+100% {
+  opacity: 1;
+  transform: scale(1);
+}
 }
 
 .timeline-item {
-  margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
 .timeline-item h3 {
-  margin: 0;
+margin: 0;
 }
 
 .timeline-item p {
-  margin: 5px 0 0 0;
+margin: 5px 0 0 0;
 }
+
 
 
 @keyframes popup {
