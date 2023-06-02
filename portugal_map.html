@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="portugual_main.js"></script>
+  <title>Ethereal</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="portugal_map.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+  <style>
+
+
+.flash-message {
+  position: fixed;
+  bottom: 40px;
+  left: 520px;
+  height: 100px;
+  width: 400px;
+  padding: 25px 10px;
+  background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);  border-radius: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: flashAnimation 1s ease-in-out;
+}
+
+    @keyframes flashAnimation {
+      0% { opacity: 0; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.1); }
+      100% { opacity: 0; transform: scale(1); }
+    }
+   
+    body {
+        padding-top:624px;
+      background-image: url('assets/portugal-map-transformed.jpeg');
+      background-size:cover;
+      background-position: center;
+      background-repeat:no-repeat;
+   
+    }
+    
+    
+    .cart-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 40px;
+      font-size: 24px;
+      /* color: #000; */
+      cursor: pointer;
+    }
+
+    .message{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 600;
+    }
+
+  </style>
+</head>
+
+<button class="floating-button" onclick="toggleTimeline()"><span class="logo">T</span></button>
+
+<div class="timeline" id="timeline">
+  <div class="timeline-item">
+    <h3>Beach Football</h3>
+    <p>Time: At 7:30 A.M.</p>
+    <p>Price: $5 per person</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Mountain Sports</h3>
+    <p>Time: At 2:30 P.M.</p>
+    <p>Price: Starting from $1 per person</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Algarve Beach Resort</h3>
+    <p>Check-In Time: At 11:00 A.M.</p>
+    <p>Price: $200 per night</p>
+  </div>
+  <div class="timeline-item">
+    <h3>Surviving an Island Game</h3>
+    <p>Time: At 10:00 A.M.</p>
+    <p>Price: Starting from $5 per session</p>
+  </div>
+</div>
+
+
+
+<body>
+  <div class="back-arrow" onclick="window.location.href='land.html'">
+    <i class="fas fa-arrow-left"></i>
+  </div>
+  
+    <div class="football-portugal" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)"></div>
+    <div class="info-card1" id="info-card1">
+      <h2>Beach football in portugal</h2>
+      <p>Experience the stunning coastlines of Portugal with our FIFA grade stadium. Explore heart throbbing games, and charming seaside towns.</p>
+      <p>Discover the rich maritime history and indulge in delicious seafood cuisine. Unforgettable adventures await you on the Mediterranean and Atlantic coasts.</p>
+      <p>Price: $99 per person</p>
+    </div>
+
+    <div class="mountain"  onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)"></div>
+  <div class="info-card3" id="info-card3">
+    <h3>MOUNTAIN SPORTS</h3>
+    <p>Experience luxury and comfort at the renowned 4 Seasons Hotel. Located in a prime location, our hotel offers breathtaking views of the surrounding cityscape. Indulge in spacious and elegantly designed rooms, equipped with modern amenities to ensure a delightful stay.</p>
+    <p>Relax and unwind at our world-class spa, dine in our exquisite restaurants, or take a refreshing dip in our rooftop infinity pool. Our attentive staff is dedicated to providing exceptional service and creating unforgettable memories for our guests.</p>
+    <p>Price: $200 per night</p>
+    </div>
+  
+    <div class="hotel1" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)"></div>
+  <div class="info-card4" id="info-card4">
+  <h3>Algarve Beach Resort</h3>
+  <p>Welcome to Algarve, a luxurious hotel nestled in the heart of Spain. Experience unparalleled comfort, impeccable service, and stunning views in our enchanting countryside retreat.</p>
+  <p>Surrounded by lush greenery and picturesque landscapes, Finca offers a tranquil oasis for those seeking relaxation and rejuvenation. Our elegantly designed rooms and suites provide a blend of modern amenities and traditional charm, ensuring a comfortable and unforgettable stay.</p>
+  <p>Price: Starting from $250 per night</p>
+</div>
+  
+    
+<div class="island-survive" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" draggable="true" ondragstart="dragStart(event)"></div>
+<div class="info-card5" id="info-card5">
+  <h3>Surving an Island</h3>
+<p>Embark on a thrilling adventure and experience the exhilaration of gliding in Spain. Discover the beauty of the Spanish landscapes from a unique perspective as you soar through the sky with the wind beneath your wings.</p>
+<p>Whether you're an experienced glider or a beginner seeking an unforgettable experience, Spain offers a variety of gliding locations that cater to all skill levels. From the rugged mountains to the stunning coastlines, each flight promises awe-inspiring views and an unmatched sense of freedom.</p>
+<p>Price: Starting from $150 per session</p>
+</div>
+  
+    <div class="cart-icon"  ondragover="allowDrop(event)" ondrop="drop(event)" onclick="window.location.href='cart.html'">
+      <!-- <i class="fas fa-shopping-cart"></i> -->
+      <img src="assets/shopping-cart-icon.png" alt="Cart Icon" width="60" height="60">
+      <span id="cartCount">0</span>
+    </div>
+  
+    <div class="flash-message" id="flashMessage">
+      <div class="message" id="message">
+      <ul>
+        <p>Discover activities and accommodations by hovering over the buttons. Add them to the cart by dragging. Click on 'T' to explore the timeline. Enjoy your experience!</p>
+      </ul>
+    </div>
+  </div>
+  <script>
+    
+    const flashMessage = document.getElementById('flashMessage');
+  
+   
+    const removeFlashMessage = () => {
+      flashMessage.parentNode.removeChild(flashMessage);
+    };
+  
+  
+    flashMessage.addEventListener('click', removeFlashMessage);
+  
+    const flashMessageDuration = 10000; 
+    setTimeout(removeFlashMessage, flashMessageDuration);
+  </script>
+  </body>
+  </html>
+  

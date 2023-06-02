@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1544002177-fce4696659d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80); 
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 5rem;
+
+  }
+  .log-in-XSi
+  {
+    position: relative;
+    left: 254px;
+  }
+  .log-in-XSi .abc{
+    margin: 0rem 10.9rem 2.6rem 10rem;
+    width: calc(100% - 20.9rem);
+    height: 3.4rem;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.2125;
+    color: #000000;
+    font-family: Inter, 'Source Sans Pro';
+    
+    
+  
+    flex-shrink: 0;
+    z-index: 1;
+    position: relative;
+    top: 25px;
+    left: -243px;
+  }  
+  .log-in-XSi .form1{
+    font-size: 20px;
+  }
+  .log-in-XSi .btn2{
+    
+    margin: 2rem 7.8rem 0rem 4.7rem;
+   
+    width: 7rem;
+    height: 1.4rem;
+
+    font-weight: 700;
+    line-height: 1.2125;
+    color: #ffffff;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #97f87900;
+    position: relative;
+    left: -27px;
+
+  }
+  .log-in-XSi .btn1{
+    margin: 2rem 7.8rem 0rem 4.7rem;
+
+    width: 7rem;
+    height: 1.4rem;
+
+    font-weight: 700;
+    line-height: 1.2125;
+    color: #ffffff;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #97f87900;
+    position: relative;
+    left: -27px;
+
+  }
+  
+  .log-in-XSi .btn3{
+    margin: 2rem 7.8rem 0rem 4.7rem;
+
+    width: 7rem;
+    height: 1.4rem;
+
+    font-weight: 700;
+    line-height: 1.2125;
+    color: #ffffff;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #97f87900;
+    position: relative;
+    left: -310px;
+
+  }
+  .log-in-XSi .username{
+    margin-bottom: 1.1rem;
+    box-sizing: border-box;
+    padding: 0.1rem 0.7rem;
+    width: 27%;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1.2125;
+    color: #6f6969;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    border: solid 0.1rem #000000;
+    background-color: #eeebeb11;
+    border-radius: 0.6rem;
+}
+.log-in-XSi .password{
+    
+    margin-bottom: 1.1rem;
+    box-sizing: border-box;
+    padding: 0.1rem 0.7rem;
+    width: 27%;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1.2125;
+    color: #6f6969;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    border: solid 0.1rem #000000;
+    background-color: #eeebeb01;
+    border-radius: 0.6rem;
+}
+
+
+.text
+{
+  width: 115%;
+  font-size: 17px;
+  background-color: #eeebeb08;
+  position: relative;
+  left: -12px;
+  border-radius: 96px;
+  border-block-color: #eeebeb08;
+  
+}
+.placeholder{
+    font-size: 20px;
+    color:#30090913 ;
+}
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  ul {
+    margin-bottom: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  button.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #3d3c3cfa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    left: 425px;
+    top: -43px;
+}
+  
+  
+  button.back-button:hover {
+    background-color: #474747;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+  }
+  
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  

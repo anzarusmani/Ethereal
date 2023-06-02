@@ -1,0 +1,90 @@
+
+   <!DOCTYPE html>
+   <html>
+   <head>
+     <title>Card Payment</title>
+     <style>
+       body {
+        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);              display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         font-family: Arial, sans-serif;
+       }
+   
+       .container {
+        background: linear-gradient(178.6deg, rgb(20, 36, 50) 11.8%, rgb(124, 143, 161) 83.8%);         padding: 40px;
+         border-radius: 32px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         text-align: center;
+       }
+   
+       h1 {
+         font-size: 28px;
+         margin-bottom: 20px;
+       }
+   
+       input {
+         padding: 10px;
+         margin-bottom: 10px;
+         width: 100%;
+         box-sizing: border-box;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+       }
+   
+     
+   
+       .amount-box {
+         padding: 10px;
+         margin: 10px 0;
+         background-color: #f2f2f2;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         font-weight: bold;
+       }
+   
+       button {
+         padding: 10px 20px;
+         font-size: 18px;
+         background-color: #4caf50;
+         color: #fff;
+         border: none;
+         border-radius: 23px;
+         cursor: pointer;
+       }
+   
+       button:hover {
+         background-color: #45a049;
+       }
+     </style>
+   </head>
+   <body>
+     <div class="container" style="background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);">
+       <h1 style="color: aliceblue;">Enter Card Details</h1>
+   
+       <form>
+         <input type="text" name="cardNumber" placeholder="Card Number" required>
+         <input type="text" name="expirationDate" placeholder="Expiration Date (MM/YY)" required>
+         <input type="text" name="cvv" placeholder="CVV" required>
+         <div class="amount-box">
+           <span>Amount to be Paid:</span>
+           <span id="amount">500$</span>
+         </div>
+         <div class="payment-status"></div>
+         <button type="submit" style="background: radial-gradient(circle at 10% 20%, rgb(4, 159, 108) 0%, rgb(194, 254, 113) 90.1%);"><a href="payment_success.html" style="text-decoration:none">Pay Now</a></button>
+       </form>
+     </div>
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const totalPrice = localStorage.getItem('totalPrice');
+        const amountElement = document.getElementById('amount');
+        amountElement.textContent = totalPrice ? totalPrice + '$' : '0$';
+        localStorage.removeItem('totalPrice');
+      });
+      </script>
+      
+   </body>
+   </html>
+   

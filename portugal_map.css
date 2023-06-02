@@ -1,0 +1,261 @@
+.football-portugal  {
+    position: relative;
+    left: 525px;
+    top: -340px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  
+
+  .info-card1 {
+    position: absolute;
+    display: none;
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    /* background-image: url('assets/gliding-ispain.png'); */
+    backdrop-filter: op(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgb(189, 240, 223);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: popup 0.3s ease;
+  }
+  
+  .info-card1 h4 {
+    margin-top: 0;
+  }
+  
+  .football-portugal:hover {
+    background-color: greenyellow;
+  }
+  
+  .football-portugal:hover + .info-card1 {
+    display: block;
+  } 
+  
+
+
+  .mountain {
+    position: relative;
+    left: 775px;
+    top: -600px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .info-card3 {
+    position: absolute;
+    /* background-image: url("assets/trekking-spain.png"); */
+    display: none;
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color:rgb(189, 240, 223);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: popup 0.3s ease;
+  }
+  
+  .info-card3 h4 {
+    margin-top: 0;
+  }
+  .mountain:hover {
+    background-color: greenyellow;
+  }
+  
+  .mountain:hover + .info-card2 {
+    display: block;
+  } 
+
+
+
+  .hotel1 {
+    position: relative;
+    left: 900px;
+    top: -440px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .info-card4 {
+    position: absolute;
+    display: none;
+    /* background-image: url("assets/boat-ispain.png"); */
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color:rgb(189, 240, 223);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    animation: popup 0.3s ease;
+  }
+  
+  .info-card4 h4 {
+    margin-top: 0;
+  }
+
+  .hotel1:hover {
+    background-color: greenyellow;
+  }
+  
+  .hotel1:hover + .info-card4 {
+    display: block;
+  } 
+  
+  .info-card5 {
+    position: absolute;
+    display: none;
+    /* background-image: url("assets/gliding-ispain.png"); */
+    bottom: 100px;
+    width: 200px;
+    padding: 10px;
+    background-color:rgb(189, 240, 223);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: popup 0.3s ease;
+  }
+
+
+  
+  .island-survive {
+    position: relative;
+    left: 1100px;
+    top: -420px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .info-card5 h4 {
+    margin-top: 0;
+  }
+  
+  
+  
+  .island-survive:hover {
+    background-color: greenyellow;
+  }
+  .island-survive:hover + .info-card5 {
+    display: block;
+  } 
+  
+  
+  
+ 
+.floating-button {
+  position: fixed;
+  bottom: 334px;
+  right: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #7ba9c0;
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
+
+  
+  .logo {
+    font-weight: bold;
+  }
+  
+  .timeline {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 88px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(189, 240, 223);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: popup1 0.5s ease;
+  }
+  
+  @keyframes popup1 {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .timeline-item {
+    margin-bottom: 10px;
+  }
+  
+  .timeline-item h3 {
+    margin: 0;
+  }
+  
+  .timeline-item p {
+    margin: 5px 0 0 0;
+  }
+
+
+  @keyframes popup {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

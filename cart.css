@@ -1,0 +1,178 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 5rem;
+    backdrop-filter: blur(95px);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main styles */
+  main {
+    padding: 40px;
+    margin-bottom: 136px;
+  }
+  
+  main h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cart-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .tt1{    
+    
+    width: 200px;
+    position: relative;
+    font-size: 23px;
+    left: 576px;
+    color: #111111;
+    background-color: #31343457;
+    border-radius: 40px;
+
+  }
+  .tt{    
+    
+    width: 200px;
+    top: -50px;
+    position: relative;
+    font-size: 23px;
+    left: 54px;
+    color: #111111;
+    background-color: #31343457;
+    border-radius: 40px;
+
+  }
+  .cart-item h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .cart-item p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .checkout-buttons {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .checkout-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+  
+  .checkout-buttons button:last-child {
+    margin-right: 0;
+  }
+  
+  /* Footer styles */
+  footer {
+    color: #fff;
+    padding: 20px;
+    text-align:end;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 10px;
+    height: 200px;
+    white-space: nowrap; /* Ensure items stay in a single line */
+    scrollbar-width: none; /* For Firefox */
+    scrollbar-color: none; 
+  }
+  
+  .cart-item {
+    border-radius: 40px;
+    flex: 0 0 auto; /* Ensure items don't grow or shrink */
+    margin-right: 10px; 
+    max-width: 200px; /* Adjust the value as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;/* Add spacing between items */
+    background-color: aquamarine;
+    backdrop-filter: blur(4px);
+    background-image: url(assets/trekking-spain.png);
+  }
+ 
+  .cart-items::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+  .cart-item p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+

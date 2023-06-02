@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="cart.js"></script>
+  
+  <title>Ethereal</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="cart.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+
+  <div>
+    <video class="video-bg" autoplay muted loop plays-inline>
+      <source src="assets/landing-adv.mp4" type="video/mp4">
+    </video>
+    <nav>
+      <div class="logo"><a href="land.html">Ethereal</a>
+
+      </div>
+      <ul>
+        <li><a href="land.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart cart-icon"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+      <h2>Checkout Cart</h2>
+      <div id="billDiv" style="display: none;">Bill</div>
+
+      <div class="cart-items"  id="cartItemsContainer">
+
+        <div class="cart-item">
+          <h3 id="cartItemHeading"></h3>
+          <p id="cartItemPrice"></p>
+        </div>
+      </div>
+
+      <div class="checkout-buttons">
+        <p class="tt1"></p>
+        <p class="tt">Payable Amount:</p>
+        <a href="payment.html"><button id="proceedToPaymentBtn">Proceed to Payment</button></a>
+        <a href="land.html"><button id="continueShoppingBtn">Continue Shopping</button></a>
+      </div>
+
+      <script>
+
+const proceedButton = document.getElementById('proceedToPaymentBtn');
+const continueButton = document.getElementById('continueShoppingBtn');
+const cartItemsContainer = document.getElementById('cartItemsContainer');
+
+proceedButton.addEventListener('click', function() {
+  // Code to be executed when the "Proceed to Payment" button is clicked
+  clearCartItems();
+  clearStorage();
+});
+
+continueButton.addEventListener('click', function() {
+  // Code to be executed when the "Continue Shopping" button is clicked
+  clearCartItems();
+  clearStorage();
+});
+
+function clearCartItems() {
+  while (cartItemsContainer.firstChild) {
+    cartItemsContainer.removeChild(cartItemsContainer.firstChild);
+  }
+}
+
+function clearStorage() {
+  localStorage.clear();
+}
+
+  
+
+      </script>
+    
+
+
+    </div>
+  </main>
+
+</body>
+
+</html>

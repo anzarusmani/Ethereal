@@ -1,15 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    
-  
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-background-image: url(https://images.unsplash.com/photo-1544002177-fce4696659d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80);
+/* background-image: url(https://images.unsplash.com/photo-1544002177-fce4696659d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80); */
 backdrop-filter: blur(5px);
-background-repeat: no-repeat;
+background-repeat:repeat;
 background-size: cover;
 
 }
@@ -23,7 +20,8 @@ background-size: cover;
     height: 100px;
     width: 100%;
   }
-  
+
+
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -37,11 +35,63 @@ background-size: cover;
   
   nav ul li a {
     color: #333;
+    font-size: 17px;
+    font-weight: bold;
     text-decoration: none;
+    
+  }
+  .nav li .cart-icon {
+    margin-right: 20px;
+ 
+  }
+  .nav li:hover .cart-icon {
+    text-decoration: underline;
   }
   
   nav ul li a:hover {
     text-decoration: underline;
   }
  
-  
+  .logo{  
+    /* text-shadow: 0px 0px 0px 15px bisque; */
+    margin-top: 0%;
+    width: 900px;
+    padding: 0ch;
+    font-family: 'poppins';
+    text-transform:capitalize;
+     font-size: 50px;
+    font-weight:lighter;
+    cursor:pointer;
+    background: linear-gradient(90deg,red, turquoise,pink,yellow,black,purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:300% 300%;
+    animation: animate 8s ease-in-out infinite;
+  }
+  @keyframes animate{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50% ; 
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+  /* video at landing */
+  .video-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+@media(min-aspect-ration:16/90)
+{
+  .back-video{
+    width: auto;
+    height: auto;
+  }
+}
+

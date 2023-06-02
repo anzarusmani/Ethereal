@@ -1,0 +1,17 @@
+.prel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw; /* Set the width to 100% of the viewport width */
+    height: 98.7vh; 
+    overflow: hidden;
+  }
+  
+  .prel video {
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+  }
+  
